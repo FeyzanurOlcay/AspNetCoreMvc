@@ -1,0 +1,15 @@
+﻿ @model AntiForgeryTokens.Models.Comment
+
+<h2>Yorum Yap</h2>
+<form asp-action="Create" method="post">
+	@Html.AntiForgeryToken() <!--Anti-forgery token burada ekleniyor -->
+	<div class="mb-3">
+		<label asp-for="Message" class="form-label"></label>
+		<textarea asp-for="Message" class="form-control"></textarea>
+		<span asp-validation-for="Message" class="text-danger"></span>
+	</div>
+	<button type="submit" class="btn btn-success">Gönder</button>
+</form>
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}
