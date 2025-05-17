@@ -1,0 +1,26 @@
+﻿@model StudentApp2.Models.Student
+
+<h2>Bilgileri Güncelle</h2>
+
+<form asp-action="Edit" method="post">
+	<div class="form-group">
+		<label asp-for="FullName"></label>
+		<input asp-for="FullName" class="form-control" />
+		<span asp-validation-for="FullName" class="text-danger"></span>
+	</div>
+
+	<div class="form-group">
+		<label asp-for="StudentNumber"></label>
+		<input asp-for="StudentNumber" class="form-control" />
+		<span asp-validation-for="StudentNumber" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="BirthDate"></label>
+		<input asp-for="BirthDate" type="date" class="form-control" />
+		<span asp-validation-for="BirthDate" class="text-danger"></span>
+	</div>
+	<button type="submit" class="btn btn-primary">Güncelle</button>
+</form>
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}
