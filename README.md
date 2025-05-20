@@ -3,7 +3,10 @@
 Bu depo, ASP.NET Core MVC mimarisini öğrenme sürecimde yaptığım küçük uygulamalardan oluşmaktadır.
 Amaç, MVC yapısını oluşturan temel bileşenleri tanımak, farklı konuları ayrı ayrı çalışmak ve pratik yapmaktır.
 
--> MVC Mimarisi
+# ❗NOT:
+Bu projeler daha önce geliştirilmiş olup GitHub’a sonradan arşivleme amacıyla yüklenmiştir. 
+
+# MVC Mimarisi
 
 Proje klasörleri, "Model-View-Controller" mimarisinin temel konularını içermektedir:
 
@@ -14,7 +17,7 @@ Proje klasörleri, "Model-View-Controller" mimarisinin temel konularını içerm
 Bazı projelerde Entity Framework Core kullanılarak veritabanı işlemleri gerçekleştirilmiştir.  
 Ayrıca Validation, API geliştirme, HTTP metodları ve güvenlik (AntiForgery) gibi başlıklar da ayrı klasörlerde örneklendirilmiştir.
 
-->Kapsanan Konular
+# Kapsanan Konular
 
 Klasörler, aşağıdaki gibi konuları ele alır:
 
@@ -26,6 +29,7 @@ Klasörler, aşağıdaki gibi konuları ele alır:
 - AntiForgeryToken kullanımı (CSRF koruması)
 - Minimal API örnekleri
 - Swagger ile API dokümantasyonu
+  
 
 ## 👩‍💻 Hakkımda
 
