@@ -1,0 +1,9 @@
+﻿@page "/giris"
+
+<h3>Kullanıcı Girişi</h3>
+<input @bind="kullaniciAdi" placeholder="Kullanıcı adınızı yazınız." class="form-control" />
+<p>Merhaba, @kullaniciAdi!</p>
+
+@code {
+	string kullaniciAdi = "";
+}

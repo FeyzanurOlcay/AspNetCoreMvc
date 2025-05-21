@@ -1,0 +1,33 @@
+﻿@page "/todo"
+<h3>Todo List</h3>
+<input @bind="yeniGorev" placeholder="Yeni Görev" class="form-control" />
+<button class="btn btn-success my-2" @onclick="GorevEkle">Ekle</button>
+
+<ul>
+	@foreach (var gorev in gorevler)
+	{
+		<li>
+			@gorev
+			<button class="btn btn-danger btn-sm mx-2" @onclick="() => GorevSil(gorev)">Sil</button>
+		</li>
+	}
+</ul>
+
+@code {
+	string yeniGorev = "";
+	List<string> gorevler = new();
+
+	void GorevEkle()
+	{
+		if (!string.IsNullOrWhiteSpace(yeniGorev))
+		{
+			gorevler.Add(yeniGorev);
+			yeniGorev = "";
+		}
+	}
+	void GorevSil(string gorev)
+	{
+		gorevler.Remove(gorev);
+	}
+
+}

@@ -1,0 +1,13 @@
+﻿@page "/sayac"
+
+<h3>Basit Sayaç</h3>
+<p>Mevcut Değer : @deger</p>
+<button class="btn btn-primary" @onclick="Arttir">Arttır</button>
+
+
+@code {
+	int deger = 0;
+	void Arttir(){
+		deger++;
+	}
+}
